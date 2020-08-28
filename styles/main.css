@@ -1,0 +1,11 @@
+
+.jokeBox {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.jokeTypeSelector { 
+    margin-bottom: 10px;
+
+}

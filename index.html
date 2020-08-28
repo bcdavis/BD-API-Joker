@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>API Joker</title>
-  </head>
-  <body>
-    <header>
-      <h1>API Joker</h1>
-    </header>
-    <section>
-      <button class="request-joke-setup-btn">Tell me a joke!</button>
-      <p class="joke-setup">
-        <!-- Joke Setup Goes Here -->
-      </p>
-      <button class="request-joke-punchline-btn" disabled="true">Punchline!</button>
-      <p class="joke-punchline">
-        <!-- Punchline Goes Here -->
-      </p>
-    </section>
-  </body>
-  <script src="scripts/main.js" type="module"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<title>API Joker</title>
+	</head>
+	<body>
+    	<header>
+      		<h1>API Joker</h1>
+		</header>
+		<div class="jokeBox">
+			<div class="jokeTypeSelector">
+				<label for="jokeTypeLabel">Joke Type</label>
+				<select class="typeSelector">
+					<option value="general">General</option>
+					<option value="knock-knock">Knock-Knock</option>
+					<option value="programming">Programming</option>
+				</select>
+			</div>
+			<section>
+				<button class="request-joke-setup-btn">Tell me a joke!</button>
+				<p class="joke-setup">
+					<!-- Joke Setup Goes Here 
+						Knock knock.
+						<button class="[1]">Who's there</button>
+						<p class="[2]"">something</p>
+						<button class="[3]">something who?</button>
+						<p>-->
+				</p>
+				<button class="request-joke-punchline-btn" disabled="true">Show Punchline</button>
+				<p class="joke-punchline">
+				<!-- Punchline Goes Here -->
+				</p> 
+			</section>
+		</div>
+		<script src="scripts/main.js" type="module"></script>
+ 	</body>
 </html>
